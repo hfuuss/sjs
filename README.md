@@ -36,3 +36,5 @@ String.prototype.trim=function(type){
 //asdasd 
 //substr方法有什么作用，大家应该知道，不知道的可以去w3c看下
 ```
+# 开源协议
+MIT
