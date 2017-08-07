@@ -195,7 +195,19 @@ img{
 //这样的设置，比如在屏幕宽度大于等于750px设备上，1rem=100px；图片显示就是宽高都是100px
 //比如在iphone6(屏幕宽度：375)上，375/750*100=50px;就是1rem=50px;图片显示就是宽高都是50px;
 ```
+### 深拷贝
+```
+var obj = {
+  name: 'zhangsan',
+  age: 12,
+}
+console.log(obj.name);
+boj.name = obj = 'lisi';
+//想要结果为 张三;结果输出 lisi
 
+//用以下语句进行深拷贝既可以解决 -----来自<你不懂的JavaScript(上卷)>
+console.log(JSON.parse(JSON.stringfy(obj)))
+``` 
 
 
 
